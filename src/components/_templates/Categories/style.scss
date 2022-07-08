@@ -1,0 +1,59 @@
+.categories-content {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.categories-content-left {
+    flex: 1;
+}
+
+.categories-content-center {
+    width: 100%;
+    max-width: 312px;
+    flex: 1;
+    text-align: center;
+    border-radius: 32px;
+    margin: 20px;
+    padding-top: 20px;
+    box-shadow: 17px 13px 80px 2px rgba(166, 166, 171, 1);
+}
+
+.categories-content-right {
+    flex: 1;
+    border-radius: 32px;
+    margin: 20px;
+    box-shadow: 17px 13px 80px 2px rgba(166, 166, 171, 1);
+}
+
+.phone-item-categories {
+    height: 472px;
+    border-radius: 32px;
+    margin: 20px;
+    box-shadow: 17px 13px 80px 2px rgba(166, 166, 171, 1);
+}
+
+.watch-item-categories {
+    height: 270px;
+    border-radius: 32px;
+    margin: 20px;
+    box-shadow: 17px 13px 80px 2px rgba(166, 166, 171, 1);
+    display: flex;
+}
+
+.header-item-categories-content {
+    font-size: 15px;
+}
+
+.header-item-description {
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.watch-block-text {
+    width: 100%;
+    max-width: 228px;
+    margin-top: 80px;
+}

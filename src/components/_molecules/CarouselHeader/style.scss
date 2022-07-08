@@ -1,0 +1,53 @@
+.tiker {
+    padding: 73px;
+    width: 100%;
+    height: 100%;
+    max-width: 1294px;
+    max-height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    border-radius: 32px;
+    text-align: center;
+    background-color: #DCE5E2;
+    overflow: hidden;
+}
+
+.item-tiker {
+    display: flex;
+    height: 490px;
+}
+
+.item-tiker-left {
+    flex: 1;
+    text-align: left;
+}
+
+.item-tiker-right {
+    flex: 1;
+    text-align: right;
+}
+
+.text-item-phone {
+    font-size: 58px;
+    line-height: 60px;
+    margin-bottom: 19px;
+}
+
+.tiker-content-left {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 588px;
+}
+
+.tiker-content-right {
+    position: absolute;
+    width: 1140px;
+    height: 100%;
+    top: 0;
+}
+
+.text-description-phone {
+    font-size: 16px;
+}

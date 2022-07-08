@@ -1,0 +1,1 @@
+export { CarouselShoppingCart } from './CarouselShoppingCart'

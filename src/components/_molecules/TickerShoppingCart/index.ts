@@ -1,0 +1,1 @@
+export { TickerShoppingCart } from './TickerShoppingCart'

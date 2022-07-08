@@ -1,0 +1,28 @@
+.carousel-shopping-cart {
+    padding: 73px;
+    width: 100%;
+    height: 100%;
+    max-width: 5694px;
+    max-height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    border-radius: 32px;
+    background-color: #DCE5E2;
+    overflow: hidden;   
+}
+
+.item-carousel-shopping-cart {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.item-carousel-shopping-cart-left {
+    flex: 1;
+}
+
+.item-carousel-shopping-right { 
+    flex: 1
+}

@@ -1,0 +1,6 @@
+export { ShoppingCartPage } from './ShoppingCartPage'
+export { AllProductsPage } from './AllProductsPage'
+export { StatisticsPage } from './StatisticsPage'
+export { ProfilePage } from './ProfilePage'
+export { ProductPage } from './ProductPage'
+export { AboutPage } from './AboutPage'

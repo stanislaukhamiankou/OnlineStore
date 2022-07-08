@@ -1,0 +1,11 @@
+.ticker {
+    display: flex;
+    height: 120px !important;
+    background: #DCE5E2;
+    align-items: center;
+    .divider {
+      width: 6px;
+      height: 6px;
+      margin: 0 28px;
+    }
+}
