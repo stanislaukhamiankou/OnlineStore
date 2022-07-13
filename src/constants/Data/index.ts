@@ -1,0 +1,1 @@
+export { dataProductСhart } from './Data'

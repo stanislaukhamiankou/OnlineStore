@@ -1,0 +1,1 @@
+export { requestTechniqueInfoAPI } from './api'

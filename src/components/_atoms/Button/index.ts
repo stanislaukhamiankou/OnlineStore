@@ -1,2 +1,2 @@
-export { ButtonDefault } from './Button'
+export { Button } from './Button'
 export type { ButtonType } from './ButtonType.d'

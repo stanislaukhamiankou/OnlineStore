@@ -1,9 +1,3 @@
-import { Statistics } from "../../_templates";
+import { Statistics } from 'src/components/_templates'
 
-export const StatisticsPage = () => {
-    return (
-        <div>
-            <Statistics />
-        </div>
-    )
-}
+export const StatisticsPage = () => ( <Statistics /> )

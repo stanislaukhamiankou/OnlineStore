@@ -1,10 +1,20 @@
-import { Button } from 'antd'
-import cn from 'classnames'
+import { Button as ButtonANTD } from 'antd'
 
 import { ButtonType } from '.'
 
-export const ButtonDefault = ({className, icon, children, onClick}: ButtonType) => (
-    <div className={cn('button-default', className)}>
-        <Button icon={icon} onClick={onClick}>{children}</Button>
-    </div>
+export const Button = ({
+    className,
+    icon,
+    children,
+    onClick,
+    disabled,
+}: ButtonType) => (
+    <ButtonANTD
+        className={className}
+        icon={icon}
+        onClick={onClick}
+        disabled={disabled}
+    >
+        {children}
+    </ButtonANTD>
 )

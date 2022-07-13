@@ -1,9 +1,3 @@
-import { Profile } from "../../_templates";
+import { Profile } from 'src/components/_templates'
 
-export const ProfilePage = () => {
-    return (
-    <div>
-        <Profile />
-    </div>
-    )
-}
+export const ProfilePage = () => ( <Profile /> )

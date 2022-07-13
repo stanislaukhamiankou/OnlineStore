@@ -1,9 +1,22 @@
 import { Typography, Image } from 'antd'
+import { useEffect } from 'react'
 
-import { CarouselShoppingCart, ShoppingCartList } from '../../_molecules'
+import { ShoppingCartList } from 'src/components/_molecules'
+import { requestAdvanceOrderAddInfo } from 'src/redux/advanceOrder/action'
+import { getAdvanceOrderInfo } from 'src/redux/advanceOrder/getters'
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
 import './style.scss'
 
 export const ShoppingCart = () => {
+    const dispatch = useAppDispatch()
+    const gadget = useAppSelector(getAdvanceOrderInfo)
+
+    useEffect(() => {
+        dispatch(requestAdvanceOrderAddInfo())
+    }, [])
+
+    console.log(gadget)
+
     return (
         <div className="shopping-cart">
             <div className="shopping-cart-content">
@@ -11,11 +24,7 @@ export const ShoppingCart = () => {
                     <Typography className="title-shopping-cart">
                         Shopping cart
                     </Typography>
-                    <ShoppingCartList />
-                    <Typography className="title-shopping-cart">
-                        Recommended
-                    </Typography>
-                    <CarouselShoppingCart />
+                    <ShoppingCartList data={gadget}/>
                 </div>
                 <div className="shopping-cart-content-right">
                     <div className="order-info-shopping-cart">

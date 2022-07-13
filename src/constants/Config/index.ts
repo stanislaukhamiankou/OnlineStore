@@ -1,0 +1,1 @@
+export { configProductСhart, configPercentageChart } from './Config'

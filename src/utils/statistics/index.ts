@@ -1,0 +1,1 @@
+export { requestStatisticsInfoAPI } from './api'

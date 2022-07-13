@@ -1,0 +1,28 @@
+.products {
+    font-size: 42px;
+    margin: 73px;
+    text-align: center;
+}
+
+.categories-title-subtext{
+    font-size: 13px;
+}
+
+.products-content {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.item-products-content {
+    flex: 1;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.description-products {
+    font-size: 13px;
+    text-align: left;
+}

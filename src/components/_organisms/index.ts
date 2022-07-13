@@ -1,2 +1,11 @@
-export { HeaderMenu } from './HeaderMenu'
-export { Footer } from './Footer'
+export { AboutContentMiddle } from './AboutContentMiddle'
+export { AboutContentStart } from './AboutContentStart'
+export { AboutContentOurMember } from './AboutContentOurMember'
+export { AboutContentOurWork } from './AboutContentOurWork'
+
+export { FormFilterCatalog } from './FormFilterCatalog'
+export { AllProductsList } from './AllProductsList'
+export { Categories } from './Categories'
+export { Products } from './Products'
+export { Header } from './Header'
+export { StatisticsContent } from './StatisticsContent'

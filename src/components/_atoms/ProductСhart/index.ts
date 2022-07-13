@@ -1,0 +1,1 @@
+export { ProductСhart } from './ProductСhart'

@@ -1,0 +1,30 @@
+.card-content {
+    display: flex;
+}
+
+.card-img {
+    flex: 1;
+}
+
+.card-description {
+    flex: 1;
+}
+
+.card-description-text {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.counter-content {
+    display: flex;
+    margin-top: 50px;
+}
+
+.text-counter {
+    flex: 1;
+    font-size: 20px;
+}
+
+.counter {
+    flex: 1;
+}

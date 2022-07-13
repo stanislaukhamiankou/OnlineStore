@@ -5,7 +5,6 @@ import {
     AllProductsPage,
     StatisticsPage,
     ProfilePage,
-    ProductPage,
     AboutPage,
 } from '../../components/_pages'
 
@@ -16,7 +15,7 @@ export default {
     [routes.statistics]: {
         component: StatisticsPage
     },
-    [routes.allproducts]: {
+    [routes.catalog]: {
         component: AllProductsPage
     },
     [routes.about]: {
@@ -24,8 +23,5 @@ export default {
     },
     [routes.shoppingcart]: {
         component: ShoppingCartPage
-    },
-    [routes.productsid]: {
-        component: ProductPage
     }
 } as Routes

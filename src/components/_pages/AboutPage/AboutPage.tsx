@@ -1,7 +1,3 @@
-import { About } from "../../_templates";
+import { About } from 'src/components/_templates'
 
-export const AboutPage = () => (
-    <div>
-        <About />
-    </div>
-)
+export const AboutPage = () => ( <About /> )

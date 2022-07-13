@@ -1,1 +1,0 @@
-export { TickerShoppingCart } from './TickerShoppingCart'

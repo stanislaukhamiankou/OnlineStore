@@ -1,7 +1,3 @@
-import { AllProducts } from "../../_templates";
+import { AllProducts } from 'src/components/_templates'
 
-export const AllProductsPage = () => (
-    <div>
-        <AllProducts />
-    </div>
-)
+export const AllProductsPage = () => ( <AllProducts /> )

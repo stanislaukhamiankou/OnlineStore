@@ -1,46 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { Line } from '@ant-design/plots'
+import { useEffect } from 'react'
 
-import './style.scss'
+import { requestStatisticsInfo } from 'src/redux/statistics/actions'
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
+import { getStatisticsInfo } from 'src/redux/statistics/getter'
+import { StatisticsContent } from 'src/components/_organisms'
 
 export const Statistics = () => {
-
-    const [data, setData] = useState([]);
+    const dispatch = useAppDispatch()
+    const data = useAppSelector(getStatisticsInfo)
 
     useEffect(() => {
-      asyncFetch();
-    }, []);
+      dispatch(requestStatisticsInfo())
+    }, [])
   
-    const asyncFetch = () => {
-      fetch('https://gw.alipayobjects.com/os/bmw-prod/e00d52f4-2fa6-47ee-a0d7-105dd95bde20.json')
-        .then((response) => response.json())
-        .then((json) => setData(json))
-        .catch((error) => {
-          console.log('fetch data failed', error);
-        });
-    };
-    const config = {
-      data,
-      xField: 'year',
-      yField: 'gdp',
-      seriesField: 'name',
-      yAxis: {
-        label: {
-          formatter: (v: any) => `${(v / 10e8).toFixed(1)} B`,
-        },
-      },
-      smooth: true,
-      animation: {
-        appear: {
-          animation: 'path-in',
-          duration: 5000,
-        },
-      },
-    };
-  
-    return (
-        <div className="support">
-            <Line {...config} />          
-        </div>
-    )
+    return <StatisticsContent data={data}/>
 }

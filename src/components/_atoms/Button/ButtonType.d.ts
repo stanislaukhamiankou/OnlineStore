@@ -1,7 +1,7 @@
 export type ButtonType = {
-    className?: string
     children?: string
+    className?: string
     icon?: React.ReactNode
+    disabled?: boolean 
     onClick?: React.MouseEventHandler<HTMLElement>
-    icon?: React.ReactNode
 }

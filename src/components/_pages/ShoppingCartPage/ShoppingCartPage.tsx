@@ -1,7 +1,3 @@
-import { ShoppingCart } from "../../_templates";
+import { ShoppingCart } from 'src/components/_templates'
 
-export const ShoppingCartPage = () => (
-    <div>
-        <ShoppingCart />
-    </div>
-)
+export const ShoppingCartPage = () => ( <ShoppingCart /> )
