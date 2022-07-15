@@ -13,8 +13,5 @@ export const Statistics = () => {
       dispatch(requestStatisticsInfo())
     }, [])
   
-    // return <StatisticsContent data={data}/>
-    return <div>
-      f
-    </div>
+    return <StatisticsContent data={data}/>
 }

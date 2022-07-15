@@ -13,8 +13,8 @@ export const configProductСhart = {
       {
         type: 'element-active',
       },
-    ],
-}
+    ], 
+} as const
 
 export const configPercentageChart = {
     height: 200,
@@ -22,4 +22,4 @@ export const configPercentageChart = {
     autoFit: false,
     percent: 0.7,
     color: ['#5B8FF9', '#E8EDF3'],
-}
+} as const

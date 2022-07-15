@@ -102,3 +102,7 @@ export const STATISTICS = {
     ITEM_THIRD: 'Number of orders in the last month',
     ITEM_FOURTH: 'Number of users in the last month',
 } as const
+
+export const SHOPPING_CART = {
+    ITEM_TITLE: 'Shopping cart'
+} as const

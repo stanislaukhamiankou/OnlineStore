@@ -9,6 +9,7 @@ export {
     HEADER_MENU,
     FORM_FILTER,
     STATISTICS,
+    SHOPPING_CART,
 } from './Text'
 export { LINKS_MEMBER, CAROUSEL_PROFILE, LINKS_CATEGORIES, LINKS_PRODUCTS } from './Links'
 export { dataProductСhart } from './Data'

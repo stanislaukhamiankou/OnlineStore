@@ -9,4 +9,5 @@ export {
     HEADER_MENU,
     FORM_FILTER,
     STATISTICS,
+    SHOPPING_CART,
 } from './Text'
