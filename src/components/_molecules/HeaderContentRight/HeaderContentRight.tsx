@@ -4,12 +4,10 @@ import { Badge } from 'antd'
 
 import { routes } from 'src/router/Config/config.routes'
 import { Button } from 'src/components/_atoms'
-import { useSelector } from 'src/redux/hooks'
-import { getAdvanceOrderInfo } from 'src/redux/advanceOrder/getters'
 
 export const HeaderContentRight = () => {
     const navigate = useNavigate()
-    const gadget = useSelector(getAdvanceOrderInfo)
+    const count = window.localStorage.getItem('count')
 
     return (
         <div className="menu-item-right">
@@ -17,7 +15,7 @@ export const HeaderContentRight = () => {
                 <Button
                     className="button-menu-right"
                     icon={
-                        <Badge count={gadget.length}>
+                        <Badge count={Number(count)}>
                             <ShoppingCartOutlined />
                         </Badge>
                     }

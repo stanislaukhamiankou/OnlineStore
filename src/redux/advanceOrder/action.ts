@@ -1,6 +1,6 @@
 import { requestAdvanceOrderAddAPI, requestAdvanceOrderDeleteAPI, requestAdvanceOrderInfoAPI } from 'src/utils'
 import { AppThunk } from '../store'
-import { loading, error, finish, setAdvanceOrder, advanceOrderLoadSuccess } from './advanceOrderSlice'
+import { loading, error, finish, advanceOrderLoadSuccess } from './advanceOrderSlice'
 import { IAdvanceOrder } from './type'
 
 export type RequestAdvanceOrderAddActionProps = {
@@ -12,6 +12,7 @@ export const requestAdvanceOrderAddInfo = (): AppThunk => async (dispatch) => {
         dispatch(loading())
         const response = await requestAdvanceOrderInfoAPI()
         dispatch(advanceOrderLoadSuccess(response.data))
+        localStorage.setItem('count', response.data.length.toString())
     } catch (err) {
         dispatch(error({ error: err }))
     } finally {
@@ -25,6 +26,7 @@ export const requestAdvanceOrderAdd =
     try {
       dispatch(loading())
       const { data } = await requestAdvanceOrderAddAPI(advanceOrder)
+      localStorage.setItem('count', data.length.toString())
     } catch (err) {
       dispatch(error({ error: err }))
     } finally {
@@ -40,6 +42,8 @@ export const requestdeleteAdvanceOrder =
       const result = await requestAdvanceOrderDeleteAPI(id)
       if (result) {
         dispatch(requestAdvanceOrderAddInfo())
+        const count = localStorage.getItem('count')
+        localStorage.setItem('count', (Number(count) - 1).toString())
       }
     } catch (err) {
       dispatch(error({ error: err }))

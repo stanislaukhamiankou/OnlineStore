@@ -14,7 +14,7 @@ export const ShoppingCart = () => {
 
     useEffect(() => {
         dispatch(requestAdvanceOrderAddInfo())
-    }, [])
+    }, [gadget.length])
 
     return (
         <div className="shopping-cart">

@@ -29,7 +29,7 @@ export const AllProducts = () => {
     return (
         <div className="catalog">
             <Input
-                placeholder="Search"
+                placeholder="Search name model"
                 onChange={onSearch}
                 style={{ width: 400}}
             />
