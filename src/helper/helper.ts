@@ -1,1 +1,1 @@
-export const containerHeight = 500
+export const containerHeight = 450

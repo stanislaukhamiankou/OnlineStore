@@ -17,7 +17,8 @@ export const AboutContentOurWork = () => (
             />
         </div>
         <div className="img-our-info">
-            <Image 
+            <Image
+                className="img"
                 src="https://miro.medium.com/max/1400/1*D4kTIjhVkhHlYO-yJBnZTw.png"
             />
         </div>

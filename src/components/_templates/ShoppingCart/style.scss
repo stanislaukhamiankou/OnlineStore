@@ -10,38 +10,10 @@
 
 .shopping-cart-content {
     display: flex;
+    margin-right: 320px;
+    margin-left: 320px;
 }
 
 .shopping-cart-content-left {
     flex: 1;
-    margin-right: 300px;
-    padding-left: 50px;
-}
-
-.shopping-cart-content-right {
-    flex: 1;
-}
-
-.title-shopping-cart {
-    font-size: 35px;
-}
-
-.order-info-shopping-cart {
-    background: #DCE5E2;
-    margin: 100px 200px 0 50px;
-    border-radius: 20px;
-    text-align: left;
-    padding: 40px;
-}
-
-.payment {
-    background: #DCE5E2;
-    margin: 50px 200px 0 50px;
-    border-radius: 20px;
-    text-align: left;
-    padding: 40px;
-}
-
-.title-right {
-    font-size: 25px;
 }

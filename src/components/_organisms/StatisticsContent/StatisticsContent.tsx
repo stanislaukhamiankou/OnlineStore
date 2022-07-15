@@ -23,11 +23,11 @@ export const StatisticsContent = ({data}: StatisticsContentType) => {
     
     return (
         <div className="statistics">
-            <TextAndChart 
+            {/* <TextAndChart 
                 classNameChart="line-statistics"
                 text={STATISTICS.ITEM_FIRST}
-                chart={<Line {...config} />}
-            />
+                // chart={<Line {...config} />}
+            /> */}
             <div className="statistics-content">
                 <TextAndChart
                 className="statistics-content-left"
@@ -35,7 +35,7 @@ export const StatisticsContent = ({data}: StatisticsContentType) => {
                 chart={<ProductСhart />}
                 />
                 <div className="statistics-content-right">
-                    <TextAndChart
+                    {/* <TextAndChart
                         className="statistics-content-right-item"
                         classNameTypography="text-stistics-diagram"
                         text={STATISTICS.ITEM_THIRD}
@@ -46,7 +46,7 @@ export const StatisticsContent = ({data}: StatisticsContentType) => {
                         classNameTypography="text-stistics-diagram"
                         text={STATISTICS.ITEM_FOURTH}
                         chart={<PercentageChart />}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

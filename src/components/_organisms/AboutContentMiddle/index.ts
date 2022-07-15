@@ -1,1 +1,0 @@
-export { AboutContentMiddle } from './AboutContentMiddle'

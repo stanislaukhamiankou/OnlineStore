@@ -6,6 +6,6 @@ const fetcher = new Fetcher()
 
 export const requestStatisticsInfoAPI = () => 
     fetcher.requestToReceive<IStatistics, IStatistics[]>({
-        url: 'http://localhost:3000/statistics',
+        url: '/statistics',
         method: HTTP_METHODS.GET,
 })

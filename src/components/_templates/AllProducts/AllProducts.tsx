@@ -1,43 +1,42 @@
 import React,{ useEffect } from 'react'
+import { Input } from 'antd'
 
-import { AllProductsList, FormFilterCatalog } from 'src/components/_organisms'
+import { setFilteredTechnique } from 'src/redux/technique/techniqueSlice'
 import { requestTechniqueInfo } from 'src/redux/technique/actions'
-import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
-import { getTechniqueInfo } from 'src/redux/technique/getters'
-import { Advertising } from 'src/components/_molecules'
+import { useDispatch, useSelector } from 'src/redux/hooks'
+import { getFiltered, getTechniqueInfo } from 'src/redux/technique/getters'
+import { AllProductsList } from 'src/components/_organisms'
+import { ITechnique } from 'src/redux/technique/type'
 import { containerHeight } from 'src/helper/helper'
 import './style.scss'
-import { Typography } from 'antd'
 
 export const AllProducts = () => {
-    const technique = useAppSelector(getTechniqueInfo)
-    const dispatch = useAppDispatch()
+    const technique = useSelector(getTechniqueInfo)
+    const filtered = useSelector(getFiltered)
+    const dispatch = useDispatch()
 
-    const onScroll = (e: React.UIEvent<HTMLElement, UIEvent>) => {
-        if (e.currentTarget.scrollHeight - e.currentTarget.scrollTop === containerHeight) {
-            dispatch(requestTechniqueInfo())
-        }
-    }
+    const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => 
+        dispatch(setFilteredTechnique(event.target.value))
+
+    const filterTech = technique.filter((item: ITechnique) => 
+        item.name.includes(filtered)
+    )
     
     useEffect(() => {
         dispatch(requestTechniqueInfo())
     }, [])
 
     return (
-        <div>
-            <div className="catalog">
-                <Advertising />
-                <div className="catalog-content">
-                    <FormFilterCatalog
-                        data={technique}
-                        />
-                    <AllProductsList
-                        data={technique}
-                        onScroll={onScroll}
-                        containerHeight={containerHeight}
-                        />
-                </div>
-            </div>
+        <div className="catalog">
+            <Input
+                placeholder="Search"
+                onChange={onSearch}
+                style={{ width: 400}}
+            />
+            <AllProductsList
+                data={filterTech}
+                containerHeight={containerHeight}
+            />
         </div>
     )
 }

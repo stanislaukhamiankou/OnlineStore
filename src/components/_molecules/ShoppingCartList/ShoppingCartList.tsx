@@ -2,11 +2,11 @@ import { Card, List } from 'antd'
 
 import { requestdeleteAdvanceOrder } from 'src/redux/advanceOrder/action'
 import { CardContent } from '../CardContent/CardContent'
-import { useAppDispatch } from 'src/redux/hooks'
+import { useDispatch } from 'src/redux/hooks'
 import { ShoppingCartListType } from '.'
 
 export const ShoppingCartList = ({data}: ShoppingCartListType) => {
-    const dispatch = useAppDispatch()
+    const dispatch = useDispatch()
 
     const deleteItemCart = (id: number) => {
         dispatch(requestdeleteAdvanceOrder(id))

@@ -5,11 +5,11 @@ import { TypographyStack } from '../TypographyStack'
 import './style.scss'
 
 export const Advertising = () => (
-    <Carousel className="tiker">
-        <div className="item-tiker">
-            <div className="item-tiker-left">
+    <Carousel className="avertising">
+        <div className="item-avertising">
+            <div className="item-avertising-left">
                 <TypographyStack
-                    className="tiker-content-left"
+                    className="avertising-content-left"
                     classNameTypographyFirst="text-item-phone"
                     classNameTypographySecond="text-description-phone"
                     text={{
@@ -18,17 +18,17 @@ export const Advertising = () => (
                     }}
                 />
             </div>
-            <div className="item-tiker-right">
+            <div className="item-avertising-right">
                 <AdvertisingImage
-                    className="tiker-content-right"
+                    className="avertising-content-right"
                     src={CAROUSEL_PROFILE.ITEM_LINKS_FIRST}
                 />
             </div>
         </div>
-        <div className="item-tiker">
-            <div className="item-tiker-left">
+        <div className="item-avertising">
+            <div className="item-avertising-left">
                 <TypographyStack
-                    className="tiker-content-left"
+                    className="avertising-content-left"
                     classNameTypographyFirst="text-item-phone"
                     classNameTypographySecond="text-description-phone"
                     text={{
@@ -37,7 +37,7 @@ export const Advertising = () => (
                     }}
                 />
             </div>
-            <div className="item-tiker-right">
+            <div className="item-avertising-right">
                 <AdvertisingImage
                     className="tiker-content-right"
                     src={CAROUSEL_PROFILE.ITEM_LINKS_SECOND}
@@ -45,9 +45,9 @@ export const Advertising = () => (
             </div>
         </div>
         <div className="item-tiker">
-            <div className="item-tiker-left">
+            <div className="item-avertising-left">
                 <TypographyStack
-                    className="tiker-content-left"
+                    className="avertising-content-left"
                     classNameTypographyFirst="text-item-phone"
                     classNameTypographySecond="text-description-phone"
                     text={{

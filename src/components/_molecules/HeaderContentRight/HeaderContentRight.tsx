@@ -1,15 +1,15 @@
 import { ShoppingCartOutlined } from '@ant-design/icons'
+import { useNavigate } from 'react-router-dom'
 import { Badge } from 'antd'
 
 import { routes } from 'src/router/Config/config.routes'
-import { getCount } from 'src/redux/count/getter'
-import { useAppSelector } from 'src/redux/hooks'
 import { Button } from 'src/components/_atoms'
-import useRouter from 'src/hooks/useRouter'
+import { useSelector } from 'src/redux/hooks'
+import { getAdvanceOrderInfo } from 'src/redux/advanceOrder/getters'
 
 export const HeaderContentRight = () => {
-    const { push } = useRouter()
-    const count = useAppSelector(getCount)
+    const navigate = useNavigate()
+    const gadget = useSelector(getAdvanceOrderInfo)
 
     return (
         <div className="menu-item-right">
@@ -17,13 +17,11 @@ export const HeaderContentRight = () => {
                 <Button
                     className="button-menu-right"
                     icon={
-                    <>
-                        <Badge count={count}>
+                        <Badge count={gadget.length}>
                             <ShoppingCartOutlined />
                         </Badge>
-                    </>
                     }
-                    onClick={() => push(routes.shoppingcart)}
+                    onClick={() => navigate(routes.shoppingcart)}
                 />
             </div>
         </div>

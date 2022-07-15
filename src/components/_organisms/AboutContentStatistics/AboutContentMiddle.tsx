@@ -2,7 +2,7 @@ import { TypographyStack } from 'src/components/_molecules'
 import { ABOUT_CONTENT_MIDDLE } from 'src/constants'
 
 
-export const AboutContentMiddle = () => (
+export const AboutContentStatistics = () => (
     <div>
         <TypographyStack 
             text={

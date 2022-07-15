@@ -2,7 +2,7 @@ import { ImageStack, TypographyStack } from 'src/components/_molecules'
 import { ABOUT_CONTENT_START } from 'src/constants'
 import './style.scss'
 
-export const AboutContentStart = () => (
+export const AboutContentDescription = () => (
     <div className="about-content-start">
         <ImageStack className="about-content-start-left" />
         <TypographyStack 

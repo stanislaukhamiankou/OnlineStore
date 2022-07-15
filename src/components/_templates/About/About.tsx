@@ -1,16 +1,16 @@
 import {
-    AboutContentMiddle,
+    AboutContentStatistics,
     AboutContentOurMember,
     AboutContentOurWork,
-    AboutContentStart
+    AboutContentDescription
 } from 'src/components/_organisms'
 import './style.scss'
 
 export const About = () => {
     return (
         <div className="about">
-            <AboutContentStart />
-            <AboutContentMiddle />
+            <AboutContentDescription />
+            <AboutContentStatistics/>
             <AboutContentOurWork />
             <AboutContentOurMember />
         </div>

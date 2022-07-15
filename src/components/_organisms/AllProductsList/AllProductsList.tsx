@@ -3,26 +3,30 @@ import VirtualList from 'rc-virtual-list'
 import { useState } from 'react'
 
 import { requestAdvanceOrderAdd } from 'src/redux/advanceOrder/action'
-import { useAppDispatch, useAppSelector } from 'src/redux/hooks'
+import { requestTechniqueInfo } from 'src/redux/technique/actions'
 import { AllProductsListType } from './AllProductsListType'
 import { ITechnique } from 'src/redux/technique/type'
-import { setCount } from 'src/redux/count/countSlice'
-import { getCount } from 'src/redux/count/getter'
 import { Button } from 'src/components/_atoms'
+import { useDispatch } from 'src/redux/hooks'
 import './style.scss'
 
-export const AllProductsList = ({ data, onScroll, containerHeight }: AllProductsListType) => {
-  const dispatch = useAppDispatch()
-  const count = useAppSelector(getCount)
+export const AllProductsList = ({ data, containerHeight }: AllProductsListType) => {
+  const dispatch = useDispatch()
+  const [count, setCount] = useState(0)
+
+  const onScroll = (e: React.UIEvent<HTMLElement, UIEvent>) => {
+    if (e.currentTarget.scrollHeight - e.currentTarget.scrollTop === containerHeight) {
+        dispatch(requestTechniqueInfo())
+    }
+}
 
   const addCart = (gadget: ITechnique) => {
-    dispatch(setCount(count + 1))
     dispatch(requestAdvanceOrderAdd({advanceOrder: {...gadget, count}}))
+    setCount(count + 1)
   }
 
   return (
     <div className="all-products">
-      <List key="1">
         <VirtualList
           data={data}
           height={containerHeight}
@@ -38,7 +42,8 @@ export const AllProductsList = ({ data, onScroll, containerHeight }: AllProducts
                     width={250}
                     height={200}
                     src={item.img}
-                    className="avatar"/>
+                    className="img"
+                  />
                   }
                 title={
                   <Typography className="info-about-gadget">
@@ -68,7 +73,6 @@ export const AllProductsList = ({ data, onScroll, containerHeight }: AllProducts
             </List.Item>
           )}
         </VirtualList>
-      </List>
       </div>
   )
 }

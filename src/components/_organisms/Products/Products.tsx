@@ -17,6 +17,7 @@ export const Products = () => {
             <div className="products-content">
                 <div className="item-products-content">
                     <Image
+                        className="img"
                         height={200}
                         src={LINKS_PRODUCTS.ITEM_LINKS_FIRST}
                     />
@@ -30,6 +31,7 @@ export const Products = () => {
                 </div>
                 <div className="item-products-content">
                     <Image
+                        className="img"
                         height={200}
                         src={LINKS_PRODUCTS.ITEM_LINKS_SECOND}
                     />
@@ -43,6 +45,7 @@ export const Products = () => {
                 </div>
                 <div className="item-products-content">
                     <Image
+                        className="img"
                         height={200}
                         src={LINKS_PRODUCTS.ITEM_LINKS_THIRD}
                     />
@@ -56,6 +59,7 @@ export const Products = () => {
                 </div>
                 <div className="item-products-content">
                     <Image
+                        className="img"
                         height={200}
                         src={LINKS_PRODUCTS.ITEM_LINKS_FOURTH}
                     />

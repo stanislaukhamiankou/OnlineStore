@@ -1,15 +1,13 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
 
+import advanceOrderSlice from './advanceOrder/advanceOrderSlice'
 import statisticsSlice from './statistics/statisticsSlice'
 import techniqueSlice from './technique/techniqueSlice'
-import countSlice from './count/countSlice'
-import advanceOrderSlice from './advanceOrder/advanceOrderSlice'
 
 export const store = configureStore({
     reducer: {
         technique: techniqueSlice,
         statistics: statisticsSlice,
-        count: countSlice,
         advanceOrder: advanceOrderSlice,
     },
 })

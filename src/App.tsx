@@ -1,15 +1,14 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-
+import { Header } from './components/_organisms'
 import AppRoutes from './router/Routes'
 import './App.css'
 
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <>
+      <Header />
       <AppRoutes />
-    </BrowserRouter>
+    </>
   )
 }
 

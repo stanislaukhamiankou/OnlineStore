@@ -1,4 +1,4 @@
-.tiker {
+.avertising {
     padding: 73px;
     width: 100%;
     height: 100%;
@@ -14,17 +14,17 @@
     overflow: hidden;
 }
 
-.item-tiker {
+.item-avertising {
     display: flex;
     height: 490px;
 }
 
-.item-tiker-left {
+.item-avertising-left {
     flex: 1;
     text-align: left;
 }
 
-.item-tiker-right {
+.item-avertising-right {
     flex: 1;
     text-align: right;
 }
@@ -35,13 +35,13 @@
     margin-bottom: 19px;
 }
 
-.tiker-content-left {
+.avertising-content-left {
     margin-top: 50px;
     width: 100%;
     max-width: 588px;
 }
 
-.tiker-content-right {
+.avertising-content-right {
     position: absolute;
     width: 1140px;
     height: 100%;

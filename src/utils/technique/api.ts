@@ -6,6 +6,6 @@ const fetcher = new Fetcher()
 
 export const requestTechniqueInfoAPI = () => 
     fetcher.requestToReceive<ITechnique, ITechnique[]>({
-        url: 'http://localhost:3000/technique',
+        url: '/technique',
         method: HTTP_METHODS.GET,
 })

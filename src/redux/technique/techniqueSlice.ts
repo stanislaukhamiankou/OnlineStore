@@ -6,7 +6,7 @@ const initialState: ITechniqueState = {
     isLoading: false,
     isLoaded: false,
     error: null,
-    filteredTechnique: [],
+    filteredTechnique: '',
 }
 
 export const techniqueSlice = createSlice({
@@ -37,7 +37,7 @@ export const techniqueSlice = createSlice({
             state.isLoaded = true
             state.technique = data
         },
-        setFilteredTechnique(state: ITechniqueState, action: PayloadAction<ITechnique[]>) {
+        setFilteredTechnique(state: ITechniqueState, action: PayloadAction<string>) {
             state.filteredTechnique = action.payload
         },
     },

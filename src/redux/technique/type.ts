@@ -15,6 +15,6 @@ export interface ITechniqueState {
     isLoading: boolean
     isLoaded: boolean
     error: any | null
-    filteredTechnique: ITechnique[]
+    filteredTechnique: string
 }
   

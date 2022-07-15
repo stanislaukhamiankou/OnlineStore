@@ -6,19 +6,19 @@ const fetcher = new Fetcher()
 
 export const requestAdvanceOrderInfoAPI = () => 
     fetcher.requestToReceive<IAdvanceOrder, IAdvanceOrder[]>({
-        url: 'http://localhost:3000/advanceOrder',
+        url: '/advanceOrder',
         method: HTTP_METHODS.GET,
 })
 
 export const requestAdvanceOrderAddAPI = (data: IAdvanceOrder) => 
     fetcher.requestToReceive<IAdvanceOrder, IAdvanceOrder[]>({
-        url: 'http://localhost:3000/advanceOrder',
+        url: '/advanceOrder',
         method: HTTP_METHODS.POST,
         data,
 })
 
 export const requestAdvanceOrderDeleteAPI = (id: number) =>
     fetcher.requestToReceive<IAdvanceOrder, IAdvanceOrder[]>({
-        url: `http://localhost:3000/advanceOrder/${id}`,
+        url: `/advanceOrder/${id}`,
         method: HTTP_METHODS.DELETE,
     })

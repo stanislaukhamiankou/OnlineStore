@@ -18,6 +18,7 @@ export const Categories = () => {
                 <div className="categories-content-left">
                     <div className="phone-item-categories">
                         <Image
+                            className="img"
                             width={500}
                             src={LINKS_CATEGORIES.ITEM_LINKS_FIRST}
                         />
@@ -31,6 +32,7 @@ export const Categories = () => {
                     </div>
                     <div className="watch-item-categories">
                         <Image
+                            className="img"
                             width={300}
                             src={LINKS_CATEGORIES.ITEM_LINKS_SECOND}
                         />
@@ -46,6 +48,7 @@ export const Categories = () => {
                 </div>
                 <div className="categories-content-center">
                     <Image
+                        className="img"
                         width={350}
                         height={600}
                         src={LINKS_CATEGORIES.ITEM_LINKS_THIRD}
@@ -60,6 +63,7 @@ export const Categories = () => {
                 </div>
                 <div className="categories-content-right">
                     <Image
+                        className="img"
                         width={550}
                         height={600}
                         src={LINKS_CATEGORIES.ITEM_LINKS_FOURTH}

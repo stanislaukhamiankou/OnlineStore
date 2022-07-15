@@ -1,0 +1,1 @@
+export { AboutContentStatistics } from './AboutContentMiddle'

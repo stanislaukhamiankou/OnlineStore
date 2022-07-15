@@ -6,4 +6,4 @@ export const HTTP_METHODS = {
     DELETE: 'DELETE',
 } as const
   
-export const BASE_URL = ''
+export const BASE_URL = 'http://localhost:3000'
