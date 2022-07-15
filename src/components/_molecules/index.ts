@@ -5,7 +5,6 @@ export { HeaderContentLeft } from './HeaderContentLeft'
 export { TypographyStack } from './TypographyStack'
 export { TextAndChart } from './TextAndChart'
 
-export { CarouselShoppingCart } from './CarouselShoppingCart'
 export { ShoppingCartList } from './ShoppingCartList'
 export { ImageStack } from './ImageStack'
 export { Advertising } from './Advertising'

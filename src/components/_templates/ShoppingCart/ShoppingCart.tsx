@@ -16,8 +16,6 @@ export const ShoppingCart = () => {
         dispatch(requestAdvanceOrderAddInfo())
     }, [])
 
-    console.log(gadget)
-
     return (
         <div className="shopping-cart">
             <div className="shopping-cart-content">
